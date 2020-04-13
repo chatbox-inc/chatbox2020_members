@@ -39,13 +39,9 @@
               <p class="c-intro__listText">
                 学びながら働ける環境
               </p>
-            </li>
-            <li class="c-intro__listItem">
               <p class="c-intro__listText">
                 個性を重視した環境
               </p>
-            </li>
-            <li class="c-intro__listItem">
               <p class="c-intro__listText">
                 多様なコミニケーション
               </p>
@@ -138,18 +134,17 @@ export default {}
   }
 
   &__list {
-    margin-right: 107px;
+    margin-right: 10%;
   }
 
   &__listItem {
-    &:nth-child(n + 2) {
-      margin-top: 35px;
-    }
+    writing-mode: vertical-lr;
   }
 
   &__listText {
     @include text-accent;
 
+    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
   }
