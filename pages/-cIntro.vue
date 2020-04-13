@@ -93,6 +93,10 @@ export default {}
   &__boxDescription {
     position: relative;
     left: -32px;
+
+    @include mobile {
+      left: auto;
+    }
   }
 
   &__box {
@@ -102,6 +106,10 @@ export default {}
   &__boxItem {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__boxItem2 {
