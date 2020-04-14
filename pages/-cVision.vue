@@ -119,6 +119,10 @@ export default {}
     display: flex;
     justify-content: center;
     margin-top: 110px;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__pointDescription {
@@ -164,6 +168,18 @@ export default {}
       &::before {
         content: "Point 3";
       }
+    }
+
+    @include mobile {
+      width: 100%;
+
+      &:nth-child(n + 2) {
+        margin-top: 100px;
+      }
+    }
+
+    img {
+      width: 100%;
     }
   }
 
