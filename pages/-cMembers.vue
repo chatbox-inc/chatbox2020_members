@@ -67,6 +67,10 @@ export default {}
   &__item {
     width: 25%;
     padding: 25px;
+
+    @include mobile {
+      width: 50%;
+    }
   }
 
   &__info {
