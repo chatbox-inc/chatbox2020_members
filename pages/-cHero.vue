@@ -35,6 +35,10 @@ export default {}
     content: "";
     background-color: #c3504f;
     transform: translate(-50%);
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__head {
