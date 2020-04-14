@@ -119,6 +119,14 @@ export default {}
     &:nth-child(n + 2) {
       margin-top: 30px;
     }
+
+    @include mobile {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 
   &__boxTitle {
