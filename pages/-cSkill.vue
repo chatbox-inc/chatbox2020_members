@@ -71,12 +71,20 @@ export default {}
 .c-skill {
   padding-bottom: 244px;
 
+  @include mobile {
+    padding-bottom: 112px;
+  }
+
   &__head {
     text-align: center;
   }
 
   &__text {
     line-height: 30px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__headTitle {
@@ -84,6 +92,10 @@ export default {}
     font-size: 50px;
     color: #393739;
     letter-spacing: 5px;
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__headColor {
@@ -92,10 +104,18 @@ export default {}
 
   &__description {
     margin-top: 65px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__box {
     margin-top: 44px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
   }
 
   &__boxDescription {
@@ -103,9 +123,8 @@ export default {}
     background-color: #faf7f7;
     border-right: 2px solid #c3504f;
 
-    &:nth-child(2) {
-      border-right: none;
-      border-left: 2px solid #c3504f;
+    @include mobile {
+      padding: 20px 35px;
     }
   }
 
@@ -121,22 +140,35 @@ export default {}
     }
 
     @include mobile {
-      display: block;
-    }
+      flex-direction: column;
 
-    img {
-      width: 100%;
+      &:nth-child(even) {
+        flex-direction: column;
+
+        .c-skill__boxDescription {
+          border-right: 0;
+          border-left: 2px solid #c3504f;
+        }
+      }
     }
   }
 
   &__boxTitle {
     font-size: 20px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   &__boxText {
     margin-top: 20px;
     line-height: 30px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 }
 </style>

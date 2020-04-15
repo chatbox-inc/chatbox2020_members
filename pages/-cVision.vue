@@ -94,6 +94,7 @@ export default {}
 
   @include mobile {
     padding-top: 50px;
+    padding-bottom: 85px;
   }
 
   &__head {
