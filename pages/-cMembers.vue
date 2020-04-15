@@ -38,12 +38,20 @@ export default {}
 .c-members {
   position: relative;
   padding-bottom: 146px;
-  background-color: #faf7f7;
+  background-color: #fcf3f3;
+
+  @include mobile {
+    padding-bottom: 110px;
+  }
 
   &__head {
     position: relative;
     top: -65px;
     text-align: center;
+
+    @include mobile {
+      top: -20px;
+    }
   }
 
   &__headTitle {
@@ -51,12 +59,20 @@ export default {}
     font-size: 60px;
     color: #393739;
     letter-spacing: 5px;
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__headColor {
     @include text-accent;
 
     font-size: 82px;
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__box {
@@ -66,7 +82,7 @@ export default {}
 
   &__item {
     width: 25%;
-    padding: 25px;
+    padding: 15px;
 
     @include mobile {
       width: 50%;
@@ -85,6 +101,10 @@ export default {}
   &__name--jp {
     margin-top: 5px;
     font-size: 20px;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 
   &__name--en {

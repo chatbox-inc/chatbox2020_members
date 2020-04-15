@@ -156,6 +156,10 @@ export default {}
     &:nth-child(3) {
       margin-top: 40px;
     }
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__list {
