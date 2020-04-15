@@ -92,6 +92,10 @@ export default {}
   padding-top: 90px;
   padding-bottom: 190px;
 
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &__head {
     text-align: center;
   }
@@ -101,10 +105,18 @@ export default {}
     font-size: 50px;
     color: #393739;
     letter-spacing: 5px;
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__text {
     line-height: 30px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__headColor {
@@ -113,6 +125,10 @@ export default {}
 
   &__description {
     margin-top: 65px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__box {
@@ -122,6 +138,7 @@ export default {}
 
     @include mobile {
       display: block;
+      margin-top: 88px;
     }
   }
 
@@ -174,18 +191,18 @@ export default {}
       width: 100%;
 
       &:nth-child(n + 2) {
-        margin-top: 100px;
+        margin-top: 88px;
       }
-    }
-
-    img {
-      width: 100%;
     }
   }
 
   &__pointTitle {
     font-size: 20px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 15px;
+    }
   }
 
   &__listItem {
@@ -193,6 +210,10 @@ export default {}
 
     &:nth-child(n + 2) {
       margin-top: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
     }
   }
 }
