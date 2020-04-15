@@ -3,7 +3,7 @@
     <div class="c-container">
       <div class="c-hero__head">
         <h2 class="c-hero__title">
-          chatboxでの働き方
+          chatboxでの<br class="c-hero__break" />働き方
         </h2>
         <p class="c-hero__text">
           個人の力でチームが活きる
@@ -26,6 +26,11 @@ export default {}
   background-position: center;
   background-size: cover;
 
+  @include mobile {
+    height: 330px;
+    background-position: left;
+  }
+
   &::after {
     position: absolute;
     bottom: -80px;
@@ -37,13 +42,18 @@ export default {}
     transform: translate(-50%);
 
     @include mobile {
-      display: none;
+      bottom: -25px;
+      height: 50px;
     }
   }
 
   &__head {
     position: absolute;
     bottom: 70px;
+
+    @include mobile {
+      top: 92px;
+    }
   }
 
   &__title {
@@ -51,6 +61,10 @@ export default {}
 
     font-size: 45px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__text {
@@ -58,6 +72,10 @@ export default {}
 
     margin-top: 40px;
     font-size: 18px;
+
+    @include mobile {
+      margin-top: 3px;
+    }
   }
 }
 </style>
