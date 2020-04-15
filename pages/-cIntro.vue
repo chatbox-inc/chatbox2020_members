@@ -67,6 +67,11 @@ export default {}
   padding-top: 105px;
   padding-bottom: 100px;
 
+  @include mobile {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
   &__head {
     text-align: center;
   }
@@ -76,6 +81,10 @@ export default {}
     font-size: 50px;
     color: #393739;
     letter-spacing: 5px;
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__headColor {
@@ -92,11 +101,16 @@ export default {}
 
     @include mobile {
       left: auto;
+      margin-top: 20px;
     }
   }
 
   &__box {
     margin-top: 50px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__boxItem {
@@ -113,11 +127,22 @@ export default {}
     align-items: center;
     justify-content: center;
     margin-top: 64px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      margin-top: 20px;
+    }
   }
 
   &__boxImg2 {
     position: relative;
     top: -10px;
+
+    @include mobile {
+      top: initial;
+      width: 200px;
+      height: 150px;
+    }
   }
 
   &__boxText {
@@ -135,10 +160,19 @@ export default {}
 
   &__list {
     margin-right: 10%;
+
+    @include mobile {
+      margin-top: 20px;
+      margin-right: 0;
+    }
   }
 
   &__listItem {
     writing-mode: vertical-lr;
+
+    @include mobile {
+      writing-mode: initial;
+    }
   }
 
   &__listText {
@@ -147,6 +181,15 @@ export default {}
     margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
+
+    @include mobile {
+      margin-left: 0;
+      font-size: 12px;
+
+      &:nth-child(n + 2) {
+        margin-top: 14px;
+      }
+    }
   }
 }
 </style>
