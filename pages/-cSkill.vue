@@ -81,10 +81,10 @@ export default {}
 
 <style lang="scss" scoped>
 .c-skill {
-  padding-bottom: 244px;
+  padding-bottom: 24.4rem;
 
   @include mobile {
-    padding-bottom: 112px;
+    padding-bottom: 11.2rem;
   }
 
   &__head {
@@ -92,21 +92,21 @@ export default {}
   }
 
   &__text {
-    line-height: 30px;
+    line-height: 3rem;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   &__headTitle {
     font-family: Yu Mincho Medium, YuMincho, serif;
-    font-size: 50px;
+    font-size: 5rem;
     color: #393739;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
   }
 
@@ -115,18 +115,18 @@ export default {}
   }
 
   &__description {
-    margin-top: 65px;
+    margin-top: 6.5rem;
 
     @include mobile {
-      margin-top: 20px;
+      margin-top: 2rem;
     }
   }
 
   &__box {
-    margin-top: 44px;
+    margin-top: 4.4rem;
 
     @include mobile {
-      margin-top: 40px;
+      margin-top: 4rem;
     }
   }
 
@@ -135,12 +135,12 @@ export default {}
   }
 
   &__boxDescription {
-    padding: 30px 40px;
+    padding: 3rem 4rem;
     background-color: #faf7f7;
-    border-right: 2px solid #c3504f;
+    border-right: 0.2rem solid #c3504f;
 
     @include mobile {
-      padding: 20px 35px;
+      padding: 2rem 3.5rem;
     }
   }
 
@@ -150,7 +150,7 @@ export default {}
     &:nth-child(2) {
       .c-skill__boxDescription {
         border-right: 0;
-        border-left: 2px solid #c3504f;
+        border-left: 0.2rem solid #c3504f;
       }
     }
 
@@ -159,7 +159,7 @@ export default {}
     }
 
     &:nth-child(n + 2) {
-      margin-top: 30px;
+      margin-top: 3rem;
     }
 
     @include mobile {
@@ -170,27 +170,27 @@ export default {}
 
         .c-skill__boxDescription {
           border-right: 0;
-          border-left: 2px solid #c3504f;
+          border-left: 0.2rem solid #c3504f;
         }
       }
     }
   }
 
   &__boxTitle {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 
   &__boxText {
-    margin-top: 20px;
-    line-height: 30px;
+    margin-top: 2rem;
+    line-height: 3rem;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 }

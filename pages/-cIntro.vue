@@ -64,12 +64,12 @@ export default {}
 
 <style lang="scss" scoped>
 .c-intro {
-  padding-top: 105px;
-  padding-bottom: 100px;
+  padding-top: 10.5rem;
+  padding-bottom: 10rem;
 
   @include mobile {
-    padding-top: 45px;
-    padding-bottom: 40px;
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
   }
 
   &__head {
@@ -78,12 +78,12 @@ export default {}
 
   &__headTitle {
     font-family: Yu Mincho Medium, YuMincho, serif;
-    font-size: 50px;
+    font-size: 5rem;
     color: #393739;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
   }
 
@@ -97,19 +97,19 @@ export default {}
 
   &__boxDescription {
     position: relative;
-    left: -32px;
+    left: -3.2rem;
 
     @include mobile {
       left: auto;
-      margin-top: 20px;
+      margin-top: 2rem;
     }
   }
 
   &__box {
-    margin-top: 50px;
+    margin-top: 5rem;
 
     @include mobile {
-      margin-top: 20px;
+      margin-top: 2rem;
     }
   }
 
@@ -126,39 +126,39 @@ export default {}
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 64px;
+    margin-top: 6.4rem;
 
     @include mobile {
       flex-direction: column-reverse;
-      margin-top: 20px;
+      margin-top: 2rem;
     }
   }
 
   &__boxImg2 {
     position: relative;
-    top: -10px;
+    top: -1rem;
 
     @include mobile {
       top: initial;
-      width: 200px;
-      height: 150px;
+      width: 20rem;
+      height: 15rem;
     }
   }
 
   &__boxText {
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 3rem;
 
     &:nth-child(2) {
-      margin-top: 70px;
+      margin-top: 7rem;
     }
 
     &:nth-child(3) {
-      margin-top: 40px;
+      margin-top: 4rem;
     }
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
@@ -166,7 +166,7 @@ export default {}
     margin-right: 10%;
 
     @include mobile {
-      margin-top: 20px;
+      margin-top: 2rem;
       margin-right: 0;
     }
   }
@@ -182,16 +182,16 @@ export default {}
   &__listText {
     @include text-accent;
 
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 2rem;
+    font-size: 2rem;
     font-weight: bold;
 
     @include mobile {
       margin-left: 0;
-      font-size: 12px;
+      font-size: 1.2rem;
 
       &:nth-child(n + 2) {
-        margin-top: 14px;
+        margin-top: 1.4rem;
       }
     }
   }

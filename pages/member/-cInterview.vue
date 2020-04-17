@@ -44,12 +44,12 @@ export default {
 
 <style lang="scss" scoped>
 .c-interview {
-  padding-top: 90px;
-  padding-bottom: 167px;
+  padding-top: 9rem;
+  padding-bottom: 16.7rem;
 
   @include mobile {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
   }
 
   &__head {
@@ -58,51 +58,51 @@ export default {
     text-align: center;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
   &__listItem {
     display: flex;
-    margin-top: 68px;
+    margin-top: 6.8rem;
 
     @include mobile {
-      margin-top: 40px;
+      margin-top: 4rem;
     }
   }
 
   &__numberBox {
     @include text-white;
 
-    width: 54px;
-    max-height: 54px;
-    padding: 15px 0;
-    margin-right: 45px;
+    width: 5.4rem;
+    max-height: 5.4rem;
+    padding: 1.5rem 0;
+    margin-right: 4.5rem;
     text-align: center;
     background-color: $clr-primary;
 
     @include mobile {
-      min-width: 50px;
-      min-height: 50px;
-      margin-right: 9px;
+      min-width: 5rem;
+      min-height: 5rem;
+      margin-right: 0.9rem;
     }
   }
 
   &__q {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 
   &__a {
-    margin-top: 16px;
+    margin-top: 1.6rem;
 
     @include mobile {
-      margin-top: 10px;
-      font-size: 14px;
+      margin-top: 1rem;
+      font-size: 1.4rem;
     }
   }
 }

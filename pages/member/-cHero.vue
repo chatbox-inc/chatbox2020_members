@@ -27,23 +27,23 @@ export default {}
 
   &__bg {
     position: relative;
-    min-height: 325px;
+    min-height: 32.5rem;
     background-image: url("~assets/image/member/hero/img_memberTop@2x.png");
     background-position: center;
   }
 
   &__head {
     position: absolute;
-    top: 66px;
+    top: 6.6rem;
   }
 
   &__title {
     @include text-white;
 
-    font-size: 35px;
+    font-size: 3.5rem;
 
     @include mobile {
-      font-size: 30px;
+      font-size: 3rem;
     }
   }
 
@@ -58,8 +58,8 @@ export default {}
   &__text {
     @include text-white;
 
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top: 4rem;
+    font-size: 1.8rem;
 
     @include mobile {
       line-height: 2;

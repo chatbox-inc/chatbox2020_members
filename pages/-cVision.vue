@@ -92,12 +92,12 @@ export default {}
 
 <style lang="scss" scoped>
 .c-vision {
-  padding-top: 90px;
-  padding-bottom: 190px;
+  padding-top: 9rem;
+  padding-bottom: 19rem;
 
   @include mobile {
-    padding-top: 50px;
-    padding-bottom: 85px;
+    padding-top: 5rem;
+    padding-bottom: 8.5rem;
   }
 
   &__head {
@@ -106,20 +106,20 @@ export default {}
 
   &__headTitle {
     font-family: Yu Mincho Medium, YuMincho, serif;
-    font-size: 50px;
+    font-size: 5rem;
     color: #393739;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
   }
 
   &__text {
-    line-height: 30px;
+    line-height: 3rem;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
@@ -128,36 +128,36 @@ export default {}
   }
 
   &__description {
-    margin-top: 65px;
+    margin-top: 6.5rem;
 
     @include mobile {
-      margin-top: 20px;
+      margin-top: 2rem;
     }
   }
 
   &__box {
     display: flex;
     justify-content: center;
-    margin-top: 110px;
+    margin-top: 11rem;
 
     @include mobile {
       display: block;
-      margin-top: 88px;
+      margin-top: 8.8rem;
     }
   }
 
   &__pointDescription {
-    padding: 10px 0 20px 0;
+    padding: 1rem 0 2rem 0;
     background-color: #f5f1f1;
   }
 
   &__point {
     position: relative;
     width: 30%;
-    margin-right: 10px;
+    margin-right: 1rem;
     text-align: center;
     background-color: #f5f1f1;
-    border-top: 2px solid #c3504f;
+    border-top: 0.2rem solid #c3504f;
 
     &:nth-last-child(1) {
       margin-right: 0;
@@ -165,17 +165,17 @@ export default {}
 
     &::before {
       position: absolute;
-      top: -50px;
+      top: -5rem;
       left: 50%;
       z-index: -2;
-      width: 100px;
-      height: 100px;
-      padding-top: 18px;
-      font-size: 18px;
+      width: 10rem;
+      height: 10rem;
+      padding-top: 1.8rem;
+      font-size: 1.8rem;
       color: #fff;
       content: "Point 1";
       background-color: #c3504f;
-      border-radius: 100px;
+      border-radius: 10rem;
       transform: translate(-50%);
     }
 
@@ -195,17 +195,17 @@ export default {}
       width: 100%;
 
       &:nth-child(n + 2) {
-        margin-top: 88px;
+        margin-top: 8.8rem;
       }
     }
   }
 
   &__pointTitle {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 15px;
+      font-size: 1.5rem;
     }
   }
 
@@ -216,14 +216,14 @@ export default {}
   }
 
   &__listItem {
-    margin-top: 10px;
+    margin-top: 1rem;
 
     &:nth-child(n + 2) {
-      margin-top: 16px;
+      margin-top: 1.6rem;
     }
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 }

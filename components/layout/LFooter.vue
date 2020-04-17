@@ -115,11 +115,11 @@ export default {}
   &__buttons {
     display: flex;
     align-items: center;
-    margin-top: 66px;
+    margin-top: 6.6rem;
 
     @include mobile {
       flex-direction: column;
-      margin-top: 60px;
+      margin-top: 6rem;
     }
   }
 
@@ -127,28 +127,28 @@ export default {}
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 0;
+    padding: 2.2rem 0;
     text-align: center;
     background-color: #fff;
 
     @include mobile {
-      padding: 17px 0;
+      padding: 1.7rem 0;
     }
   }
 
   &__text {
     @include text-white;
 
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 17px;
+      font-size: 1.7rem;
     }
   }
 
   &__icon {
-    margin-right: 10px;
+    margin-right: 1rem;
   }
 
   &__box {
@@ -158,37 +158,37 @@ export default {}
 
   &__buttonIcon {
     position: relative;
-    top: 12px;
+    top: 1.2rem;
 
     @include mobile {
-      top: 8px;
-      width: 28px;
+      top: 0.8rem;
+      width: 2.8rem;
     }
   }
 
   &__callInfo {
-    margin-left: 90px;
+    margin-left: 9rem;
     text-align: left;
 
     @include mobile {
-      margin-top: 50px;
+      margin-top: 5rem;
       margin-left: 0;
     }
   }
 
   &__logos {
-    margin-top: 55px;
+    margin-top: 5.5rem;
   }
 
   &__callText {
     @include text-white;
 
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 3.75px;
+    letter-spacing: 0.375rem;
 
     @include mobile {
-      font-size: 16px;
+      font-size: 16rem;
       text-align: center;
     }
   }
@@ -200,31 +200,31 @@ export default {}
   &__buttons {
     display: flex;
     align-items: center;
-    margin-top: 66px;
+    margin-top: 6.6rem;
 
     @include mobile {
       flex-direction: column;
-      margin-top: 60px;
+      margin-top: 6rem;
     }
   }
 
   &__callNumber {
-    margin-top: 20px;
-    font-size: 32px;
+    margin-top: 2rem;
+    font-size: 3.2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
   }
 
   &__container {
-    max-width: 1590px;
-    padding: 47px 22px 111px 22px;
+    max-width: 159rem;
+    padding: 4.7rem 2.2rem 11.1rem 2.2rem;
     margin: 0 auto;
 
     @include mobile {
-      padding-bottom: 15px;
+      padding-bottom: 1.5rem;
     }
   }
 
@@ -237,11 +237,11 @@ export default {}
   }
 
   &__listItem {
-    margin-right: 42px;
+    margin-right: 4.2rem;
 
     @include mobile {
-      margin-right: 10px;
-      font-size: 10px;
+      margin-right: 1rem;
+      font-size: 1rem;
     }
   }
 
@@ -250,26 +250,26 @@ export default {}
   }
 
   &__divider {
-    margin: 26px 0 0 0;
+    margin: 2.6rem 0 0 0;
     border-color: #c3504f80;
   }
 
   &__divider--white {
-    margin-top: 127px;
+    margin-top: 12.7rem;
     border-color: white;
 
     @include mobile {
-      margin-top: 50px;
+      margin-top: 5rem;
     }
   }
 
   &__infos {
     display: flex;
     justify-content: space-between;
-    margin-top: 18px;
+    margin-top: 1.8rem;
 
     @include mobile {
-      margin-top: 43px;
+      margin-top: 4.3rem;
     }
   }
 
@@ -278,15 +278,15 @@ export default {}
     align-items: center;
 
     &:nth-child(1) {
-      margin-right: 15px;
+      margin-right: 1.5rem;
     }
   }
 
   &__infoLogo {
-    margin-right: 20px;
+    margin-right: 2rem;
 
     @include mobile {
-      margin-right: 10px;
+      margin-right: 1rem;
     }
   }
 
@@ -294,48 +294,48 @@ export default {}
     @include text-accent;
 
     @include mobile {
-      font-size: 10px;
+      font-size: 1rem;
     }
   }
 
   &__logoText {
     @include text-white;
 
-    margin-top: 60px;
+    margin-top: 6rem;
 
     @include mobile {
-      margin-top: 50px;
-      font-size: 12px;
+      margin-top: 5rem;
+      font-size: 1.2rem;
     }
   }
 
   &__snsLink {
     &:nth-child(1) {
-      margin-right: 15px;
+      margin-right: 1.5rem;
     }
   }
 }
 
 .c-container {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 70px;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
 
   @include mobile {
-    padding-top: 79px;
-    padding-bottom: 99px;
+    padding-top: 7.9rem;
+    padding-bottom: 9.9rem;
   }
 
   &::after {
     position: absolute;
-    top: -1px;
+    top: -0.1rem;
     left: 50%;
     width: 0;
     height: 0;
     content: "";
     border-color: #fff transparent transparent transparent;
     border-style: solid;
-    border-width: 40px 35px 0 35px;
+    border-width: 4rem 3.5rem 0 3.5rem;
     transform: translate(-50%);
   }
 }

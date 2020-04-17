@@ -62,13 +62,13 @@ export default {
 
 <style lang="scss" scoped>
 .c-timeline {
-  padding-top: 82px;
-  padding-bottom: 95px;
+  padding-top: 8.2rem;
+  padding-bottom: 9.5rem;
   background-color: #faf7f7;
 
   @include mobile {
-    padding-top: 40px;
-    padding-bottom: 103px;
+    padding-top: 4rem;
+    padding-bottom: 10.3rem;
   }
 
   &__head {
@@ -76,12 +76,12 @@ export default {
   }
 
   &__date {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
 
     @include mobile {
       margin: 0 auto 0 0;
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 
@@ -89,15 +89,15 @@ export default {
     @include text-h2;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
   &__box {
-    margin-top: 70px;
+    margin-top: 7rem;
 
     @include mobile {
-      margin-top: 40px;
+      margin-top: 4rem;
     }
   }
 
@@ -107,12 +107,12 @@ export default {
 
     &::before {
       position: absolute;
-      top: -175px;
-      left: 65px;
+      top: -17.5rem;
+      left: 6.5rem;
       z-index: -3;
       display: inline-block;
-      width: 11px;
-      height: 200px;
+      width: 1.1rem;
+      height: 20rem;
       content: "";
       background-color: #f7dfdf;
     }
@@ -122,11 +122,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 74px;
+    margin-top: 7.4rem;
 
     @include mobile {
       flex-direction: column;
-      margin-top: 100px;
+      margin-top: 10rem;
 
       &:nth-child(1) {
         margin-top: 0;
@@ -137,10 +137,10 @@ export default {
   &__start {
     z-index: 1;
     display: inline-block;
-    width: 38px;
-    height: 38px;
+    width: 3.8rem;
+    height: 3.8rem;
     background-color: #f7dfdf;
-    border-radius: 83px;
+    border-radius: 8.3rem;
 
     @include mobile {
       display: none;
@@ -149,59 +149,59 @@ export default {
 
   &__event {
     z-index: 3;
-    width: 564px;
-    padding: 15px 40px;
+    width: 56.4rem;
+    padding: 1.5rem 4rem;
     background-color: #fff;
-    border: 4px solid #f7dfdf;
-    border-radius: 5px;
+    border: 0.4rem solid #f7dfdf;
+    border-radius: 0.5rem;
 
     @include mobile {
       width: 100%;
-      padding: 25px 10px;
+      padding: 2.5rem 1rem;
     }
   }
 
   &__subTitle {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 16px;
+      font-size: 1.6rem;
       text-align: center;
     }
   }
 
   &__info {
-    margin-top: 11px;
+    margin-top: 1.1rem;
 
     @include mobile {
-      margin-top: 16px;
+      margin-top: 1.6rem;
     }
   }
 
   &__infoTitle {
-    margin-right: 10px;
+    margin-right: 1rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   &__part {
-    margin-top: 5px;
+    margin-top: 0.5rem;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   &__text {
-    margin-top: 11px;
+    margin-top: 1.1rem;
 
     @include mobile {
-      margin-top: 25px;
-      font-size: 14px;
+      margin-top: 2.5rem;
+      font-size: 1.4rem;
     }
   }
 }

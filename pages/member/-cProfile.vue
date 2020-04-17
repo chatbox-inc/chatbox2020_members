@@ -44,12 +44,12 @@ export default {
 <style lang="scss" scoped>
 .c-profile {
   width: 100%;
-  padding-top: 75px;
-  padding-bottom: 85px;
+  padding-top: 7.5rem;
+  padding-bottom: 8.5rem;
 
   @include mobile {
-    padding-top: 45px;
-    padding-bottom: 134px;
+    padding-top: 4.5rem;
+    padding-bottom: 13.4rem;
   }
 
   &__box {
@@ -80,48 +80,48 @@ export default {
     @include text-primary;
 
     position: relative;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.25rem;
 
     &::before {
       position: relative;
-      top: 4px;
+      top: 0.4rem;
       display: inline-block;
-      width: 13px;
-      height: 30px;
+      width: 1.3rem;
+      height: 3rem;
       content: "";
       background-color: #c3504f;
     }
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
 
       &::before {
-        width: 7px;
-        height: 23px;
+        width: 0.7rem;
+        height: 2.3rem;
       }
     }
   }
 
   &__name--small {
-    font-size: 16px;
+    font-size: 1.6rem;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   &__job {
-    margin-top: 14px;
+    margin-top: 1.4rem;
     font-weight: bold;
   }
 
   &__text {
-    margin-top: 10px;
+    margin-top: 1rem;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 }

@@ -51,41 +51,41 @@ export default {
 <style lang="scss" scoped>
 .c-members {
   position: relative;
-  padding-bottom: 146px;
+  padding-bottom: 14.6rem;
   background-color: #fcf3f3;
 
   @include mobile {
-    padding-bottom: 110px;
+    padding-bottom: 11rem;
   }
 
   &__head {
     position: relative;
-    top: -65px;
+    top: -6.5rem;
     text-align: center;
 
     @include mobile {
-      top: -20px;
+      top: -2rem;
     }
   }
 
   &__headTitle {
     font-family: Yu Mincho Medium, YuMincho, serif;
-    font-size: 60px;
+    font-size: 6rem;
     color: #393739;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
   }
 
   &__headColor {
     @include text-accent;
 
-    font-size: 82px;
+    font-size: 8.2rem;
 
     @include mobile {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
   }
 
@@ -96,7 +96,7 @@ export default {
 
   &__item {
     width: 25%;
-    padding: 15px;
+    padding: 1.5rem;
     text-align: center;
 
     @include mobile {
@@ -105,8 +105,8 @@ export default {
   }
 
   &__itemImg {
-    width: 203px;
-    height: 205px;
+    width: 20.3rem;
+    height: 20.5rem;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -118,27 +118,27 @@ export default {
   &__job {
     @include text-primary;
 
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
   }
 
   &__name--jp {
     @include text-primary;
 
-    margin-top: 5px;
-    font-size: 20px;
+    margin-top: 0.5rem;
+    font-size: 2rem;
 
     @include mobile {
-      font-size: 16px;
+      font-size: 16rem;
     }
   }
 
   &__name--en {
-    padding-bottom: 20px;
-    margin-top: 5px;
-    font-size: 12px;
+    padding-bottom: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
     color: #ccc4cb;
-    border-bottom: 2px solid #c3504f;
+    border-bottom: 0.2rem solid #c3504f;
   }
 }
 </style>
