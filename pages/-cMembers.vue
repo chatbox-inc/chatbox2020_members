@@ -86,6 +86,7 @@ export default {}
 
     @include mobile {
       width: 50%;
+      text-align: center;
     }
   }
 

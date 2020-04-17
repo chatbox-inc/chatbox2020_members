@@ -16,6 +16,7 @@
           <img
             src="@/assets/image/vision/img_point01@2x.png"
             alt="社内風景画像"
+            class="c-vision__pointImg"
           />
           <div class="c-vision__pointDescription">
             <p class="c-vision__pointTitle">
@@ -38,6 +39,7 @@
           <img
             src="@/assets/image/vision/img_point02@2x.png"
             alt="社内風景画像"
+            class="c-vision__pointImg"
           />
           <div class="c-vision__pointDescription">
             <p class="c-vision__pointTitle">
@@ -60,6 +62,7 @@
           <img
             src="@/assets/image/vision/img_point03@2x.png"
             alt="社内風景画像"
+            class="c-vision__pointImg"
           />
           <div class="c-vision__pointDescription">
             <p class="c-vision__pointTitle">
@@ -203,6 +206,12 @@ export default {}
 
     @include mobile {
       font-size: 15px;
+    }
+  }
+
+  &__pointImg {
+    @include mobile {
+      width: 100%;
     }
   }
 

@@ -13,7 +13,11 @@
       </div>
       <div class="c-skill__box">
         <div class="c-skill__boxItem">
-          <img src="@/assets/image/skill/img_skill@2x.png" alt="社内風景画像" />
+          <img
+            src="@/assets/image/skill/img_skill@2x.png"
+            class="c-skill__boxImg"
+            alt="社内風景画像"
+          />
           <div class="c-skill__boxDescription">
             <h3 class="c-skill__boxTitle">
               多様なコミニケーション
@@ -29,7 +33,11 @@
           </div>
         </div>
         <div class="c-skill__boxItem">
-          <img src="@/assets/image/skill/img_skill@2x.png" alt="社内風景画像" />
+          <img
+            src="@/assets/image/skill/img_skill@2x.png"
+            class="c-skill__boxImg"
+            alt="社内風景画像"
+          />
           <div class="c-skill__boxDescription">
             <h3 class="c-skill__boxTitle">
               自己管理能力の向上
@@ -45,7 +53,11 @@
           </div>
         </div>
         <div class="c-skill__boxItem">
-          <img src="@/assets/image/skill/img_skill@2x.png" alt="社内風景画像" />
+          <img
+            src="@/assets/image/skill/img_skill@2x.png"
+            class="c-skill__boxImg"
+            alt="社内風景画像"
+          />
           <div class="c-skill__boxDescription">
             <h3 class="c-skill__boxTitle">
               スクール勉強会の開催
@@ -118,6 +130,10 @@ export default {}
     }
   }
 
+  &__boxImg {
+    object-fit: cover;
+  }
+
   &__boxDescription {
     padding: 30px 40px;
     background-color: #faf7f7;
@@ -130,6 +146,13 @@ export default {}
 
   &__boxItem {
     display: flex;
+
+    &:nth-child(2) {
+      .c-skill__boxDescription {
+        border-right: 0;
+        border-left: 2px solid #c3504f;
+      }
+    }
 
     &:nth-child(even) {
       flex-direction: row-reverse;
