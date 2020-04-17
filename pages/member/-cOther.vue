@@ -17,7 +17,7 @@
                 {{ user.name_jp }}
               </p>
               <p class="c-other__job">
-                {{ user.job }}
+                {{ user.position }}
               </p>
             </nuxt-link>
           </div>
@@ -66,6 +66,11 @@ export default {
   }
 
   &__img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+
     @include mobile {
       width: 120px;
     }

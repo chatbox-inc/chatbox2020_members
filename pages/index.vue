@@ -4,7 +4,7 @@
     <c-intro />
     <c-vision />
     <c-skill />
-    <c-members />
+    <c-members :member-list="memberList" />
   </section>
 </template>
 
@@ -14,6 +14,7 @@ import CIntro from "@/pages/-cIntro.vue"
 import CVision from "@/pages/-cVision.vue"
 import CSkill from "@/pages/-cSkill.vue"
 import CMembers from "@/pages/-cMembers.vue"
+import { member } from "@/static/api/member.json"
 export default {
   components: {
     CHero,
@@ -21,6 +22,11 @@ export default {
     CVision,
     CSkill,
     CMembers,
+  },
+  data() {
+    return {
+      memberList: member,
+    }
   },
 }
 </script>

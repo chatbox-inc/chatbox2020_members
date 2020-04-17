@@ -1,5 +1,5 @@
 <template>
-  <section class="c-interview">
+  <section v-if="interview" class="c-interview">
     <div class="c-container">
       <div class="c-interview__head">
         <h2 class="c-interview__title">
@@ -8,48 +8,20 @@
       </div>
       <div class="c-interview__questions">
         <ul class="c-interview__list">
-          <li class="c-interview__listItem">
+          <li
+            v-for="data in interview"
+            :key="data.id"
+            class="c-interview__listItem"
+          >
             <div class="c-interview__numberBox">
-              <p class="c-interview__number">
-                01
-              </p>
+              <p class="c-interview__number" v-html="`0${data.id}`"></p>
             </div>
             <div class="c-interview__question">
               <p class="c-interview__q">
-                --(仮)質問項目が入ります。
+                {{ data.question }}
               </p>
               <p class="c-interview__a">
-                回答が入ります。
-              </p>
-            </div>
-          </li>
-          <li class="c-interview__listItem">
-            <div class="c-interview__numberBox">
-              <p class="c-interview__number">
-                02
-              </p>
-            </div>
-            <div class="c-interview__question">
-              <p class="c-interview__q">
-                --学校生活で楽しかったことは？
-              </p>
-              <p class="c-interview__a">
-                回答が入ります。回答が入ります。回答が入ります。回答が入ります。
-              </p>
-            </div>
-          </li>
-          <li class="c-interview__listItem">
-            <div class="c-interview__numberBox">
-              <p class="c-interview__number">
-                03
-              </p>
-            </div>
-            <div class="c-interview__question">
-              <p class="c-interview__q">
-                --学校生活で何を学んでいますか？
-              </p>
-              <p class="c-interview__a">
-                回答が入ります。回答が入ります。回答が入ります。回答が入ります。
+                {{ data.answer }}
               </p>
             </div>
           </li>
@@ -60,7 +32,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    interview: {
+      type: Array,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

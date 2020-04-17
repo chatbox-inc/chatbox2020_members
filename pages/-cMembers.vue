@@ -7,23 +7,25 @@
         </h2>
       </div>
       <div class="c-members__box">
-        <div v-for="n in 8" :key="n" class="c-members__item">
-          <img
-            src="@/assets/image/members/img_profile@2x.png"
-            class="c-members__itemImg"
-            alt="社員写真"
-          />
-          <div class="c-members__info">
-            <p class="c-members__job">
-              株式会社chatbox/ 代表取締役
-            </p>
-            <p class="c-members__name--jp">
-              後藤 知宏
-            </p>
-            <p class="c-members__name--en">
-              Goto Tomohiro
-            </p>
-          </div>
+        <div
+          v-for="member in getSomeMember"
+          :key="member.id"
+          class="c-members__item"
+        >
+          <nuxt-link :to="`/member/${member.id}`" class="c-members__link">
+            <img :src="member.img" class="c-members__itemImg" alt="社員写真" />
+            <div class="c-members__info">
+              <p class="c-members__job">
+                {{ member.position }}
+              </p>
+              <p class="c-members__name--jp">
+                {{ member.name_jp }}
+              </p>
+              <p class="c-members__name--en">
+                {{ member.name_en }}
+              </p>
+            </div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -31,7 +33,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    memberList: {
+      type: Array,
+      required: true,
+    },
+  },
+  computed: {
+    getSomeMember() {
+      return this.memberList.slice(0, 8)
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -83,11 +97,18 @@ export default {}
   &__item {
     width: 25%;
     padding: 15px;
+    text-align: center;
 
     @include mobile {
       width: 50%;
-      text-align: center;
     }
+  }
+
+  &__itemImg {
+    width: 203px;
+    height: 205px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   &__info {
@@ -95,11 +116,15 @@ export default {}
   }
 
   &__job {
+    @include text-primary;
+
     margin-top: 10px;
     font-size: 12px;
   }
 
   &__name--jp {
+    @include text-primary;
+
     margin-top: 5px;
     font-size: 20px;
 

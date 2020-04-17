@@ -1,5 +1,5 @@
 <template>
-  <section class="c-timeline">
+  <section v-if="timeline" class="c-timeline">
     <div class="c-container">
       <div class="c-timeline__head">
         <h2 class="c-timeline__title">
@@ -8,7 +8,7 @@
       </div>
       <div class="c-timeline__box">
         <div class="c-timeline__item">
-          <time class="c-timeline__date">2020.03</time>
+          <time class="c-timeline__date">{{ timeline.joined }}</time>
           <div class="c-timeline__start"></div>
           <div class="c-timeline__event">
             <h3 class="c-timeline__subTitle">
@@ -16,85 +16,31 @@
             </h3>
           </div>
         </div>
-        <div class="c-timeline__item">
+        <div
+          v-for="event in timeline.event"
+          :key="event.id"
+          class="c-timeline__item"
+        >
           <time class="c-timeline__date">2020.04</time>
           <div class="c-timeline__img">
-            <img
-              src="@/assets/image/member/timeline/img_timeline01@2x.png"
-              alt="実績画像"
-              class="c-timeline__img"
-            />
+            <img :src="event.img" alt="実績画像" class="c-timeline__img" />
           </div>
           <div class="c-timeline__event">
             <h3 class="c-timeline__subTitle">
-              Vueを使用したコーディング案件
+              {{ event.title }}
             </h3>
             <div class="c-timeline__info">
               <p class="c-timeline__work">
                 <span class="c-timeline__infoTitle">案件内容</span>
-                マッチングアプリサービス
+                {{ event.work }}
               </p>
               <p class="c-timeline__part">
                 <span class="c-timeline__infoTitle">担当範囲</span>
-                TOPページコーディング
+                {{ event.part }}
               </p>
             </div>
             <p class="c-timeline__text">
-              主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
-            </p>
-          </div>
-        </div>
-        <div class="c-timeline__item">
-          <time class="c-timeline__date">2020.04</time>
-          <div class="c-timeline__img">
-            <img
-              src="@/assets/image/member/timeline/img_timeline01@2x.png"
-              alt="実績画像"
-            />
-          </div>
-          <div class="c-timeline__event">
-            <h3 class="c-timeline__subTitle">
-              Laravelを使用したサイト構築
-            </h3>
-            <div class="c-timeline__info">
-              <p class="c-timeline__work">
-                <span class="c-timeline__infoTitle">案件内容</span>
-                マッチングアプリサービス
-              </p>
-              <p class="c-timeline__part">
-                <span class="c-timeline__infoTitle">担当範囲</span>
-                TOPページコーディング
-              </p>
-            </div>
-            <p class="c-timeline__text">
-              主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
-            </p>
-          </div>
-        </div>
-        <div class="c-timeline__item">
-          <time class="c-timeline__date">2020.04</time>
-          <div class="c-timeline__img">
-            <img
-              src="@/assets/image/member/timeline/img_timeline01@2x.png"
-              alt="実績画像"
-            />
-          </div>
-          <div class="c-timeline__event">
-            <h3 class="c-timeline__subTitle">
-              Laravelを使用したサイト構築
-            </h3>
-            <div class="c-timeline__info">
-              <p class="c-timeline__work">
-                <span class="c-timeline__infoTitle">案件内容</span>
-                マッチングアプリサービス
-              </p>
-              <p class="c-timeline__part">
-                <span class="c-timeline__infoTitle">担当範囲</span>
-                TOPページコーディング
-              </p>
-            </div>
-            <p class="c-timeline__text">
-              主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+              {{ event.body }}
             </p>
           </div>
         </div>
@@ -104,7 +50,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    timeline: {
+      type: Object,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
