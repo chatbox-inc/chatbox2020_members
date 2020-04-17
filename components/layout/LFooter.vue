@@ -188,7 +188,7 @@ export default {}
     letter-spacing: 0.375rem;
 
     @include mobile {
-      font-size: 16rem;
+      font-size: 1.6rem;
       text-align: center;
     }
   }
