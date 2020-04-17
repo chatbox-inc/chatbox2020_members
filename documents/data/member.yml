@@ -1,0 +1,43 @@
+member:
+    - id : 1
+      name_jp: 為本 雄亮
+      name_en: Tamemoto Yusuke
+      position: フロントエンドエンジニア
+      img: "/image/profile/img_profile_detail01@2x.png"
+      profile : 
+        name_jp: 後藤 知宏
+        name_en: Goto Tomohiro
+        position: フロントエンジニア
+        img: /image/profile/img_profile_detail01@2x.png"
+        body: 自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。ああああああああああ
+      timline :
+        joined: "2020.03"
+        event:
+            - date : "2020:04"
+              img: /image/timeline/img_timeline01@2x.png
+              title: Vueを使用したコーディング案件
+              work: マッチングアプリサービス
+              part: TOPページコーディング
+              body: 主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+            - date : "2020:04"
+              img: /image/timeline/img_timeline01@2x.png
+              title: Laravelを使用したサイト構築
+              work: マッチングアプリサービス
+              part: TOPページコーディング
+              body: 主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+            - date : "2020:04"
+              img: /image/timeline/img_timeline01@2x.png
+              title: Vueを使用したコーディング案件
+              work: マッチングアプリサービス
+              part: TOPページコーディング
+              body: 主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+      interview: 
+        - id : 1
+          question: --(仮)質問項目が入ります。
+          answer: 回答が入ります。
+        - id : 2
+          question: --学校生活で楽しかったことは？
+          answer: 回答が入ります。回答が入ります。回答が入ります。回答が入ります。
+        - id : 3
+          question: --学校生活で何を学んでいますか？
+          answer: 回答が入ります。回答が入ります。回答が入ります。回答が入ります。
