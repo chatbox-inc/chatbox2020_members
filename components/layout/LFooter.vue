@@ -186,6 +186,7 @@ export default {}
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.375rem;
+    appearance: none;
 
     @include mobile {
       font-size: 1.6rem;
