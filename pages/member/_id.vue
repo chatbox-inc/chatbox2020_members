@@ -36,9 +36,6 @@ export default {
       return this.$route.params.id
     },
   },
-  mounted() {
-    console.log(this.getMember)
-  },
 }
 </script>
 
