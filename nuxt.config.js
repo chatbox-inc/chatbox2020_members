@@ -33,7 +33,10 @@ export default {
   generate: {
     routes() {
       const pathList = []
-      pathList.push("/member/1")
+      const { member } = require("./static/api/member.json")
+      for (let memberInfo of member) {
+        pathList.push(`/member/${memberInfo.id}`)
+      }
       return pathList
     },
   },
