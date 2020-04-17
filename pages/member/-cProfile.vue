@@ -70,6 +70,12 @@ export default {
     }
   }
 
+  &__img {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
   &__name {
     @include text-primary;
 

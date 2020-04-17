@@ -72,21 +72,10 @@ export default {
   }
 
   &__item {
-    width: 130px;
-    margin-right: 90px;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    width: 25%;
 
     @include mobile {
       width: 50%;
-      max-width: 120px;
-      margin-right: 20px;
-
-      &:nth-child(even) {
-        margin-right: 0;
-      }
 
       &:nth-child(n + 3) {
         margin-top: 40px;
