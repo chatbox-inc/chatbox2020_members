@@ -109,6 +109,11 @@ export default {
     height: 20.5rem;
     border-radius: 50%;
     object-fit: cover;
+
+    @include mobile {
+      width: 12rem;
+      height: 12rem;
+    }
   }
 
   &__info {
@@ -129,7 +134,7 @@ export default {
     font-size: 2rem;
 
     @include mobile {
-      font-size: 16rem;
+      font-size: 1.6rem;
     }
   }
 

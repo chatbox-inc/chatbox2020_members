@@ -46,24 +46,24 @@
       </div>
     </div>
 
-    <div class="l-footer__container">
-      <ul class="l-footer__list">
-        <li class="l-footer__listItem">
+    <div class="l-navi__container">
+      <ul class="l-navi__list">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             chatboxについて
           </nuxt-link>
         </li>
-        <li class="l-footer__listItem">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             サービス
           </nuxt-link>
         </li>
-        <li class="l-footer__listItem">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             メンバー
           </nuxt-link>
         </li>
-        <li class="l-footer__listItem">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             お問い合わせ
           </nuxt-link>
@@ -219,16 +219,6 @@ export default {}
     }
   }
 
-  &__container {
-    max-width: 159rem;
-    padding: 4.7rem 2.2rem 11.1rem 2.2rem;
-    margin: 0 auto;
-
-    @include mobile {
-      padding-bottom: 1.5rem;
-    }
-  }
-
   &__list {
     display: flex;
 
@@ -313,6 +303,35 @@ export default {}
   &__snsLink {
     &:nth-child(1) {
       margin-right: 1.5rem;
+    }
+  }
+}
+
+.l-navi {
+  &__container {
+    max-width: 159rem;
+    padding: 4.7rem 2.2rem 11.1rem 2.2rem;
+    margin: 0 auto;
+
+    @include mobile {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__listItem {
+    margin-right: 4.2rem;
+
+    @include mobile {
+      margin-right: 1rem;
+      font-size: 1rem;
     }
   }
 }
