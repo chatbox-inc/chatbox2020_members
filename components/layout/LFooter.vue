@@ -301,8 +301,8 @@ export default {}
 
 .l-buttons {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-top: 6.6rem;
 
