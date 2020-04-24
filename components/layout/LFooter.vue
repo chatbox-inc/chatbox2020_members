@@ -302,6 +302,8 @@ export default {}
 .l-buttons {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 6.6rem;
 
   @include mobile {
@@ -348,11 +350,11 @@ export default {}
   }
 
   &__info {
-    margin-left: 9rem;
+    margin-left: 2rem;
     text-align: left;
 
     @include mobile {
-      margin-top: 5rem;
+      margin-top: 4rem;
       margin-left: 0;
     }
   }
@@ -360,12 +362,14 @@ export default {}
   &__text {
     @include text-white;
 
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.375rem;
     appearance: none;
 
     @include mobile {
+      margin-top: 0;
       font-size: 1.6rem;
       text-align: center;
     }
