@@ -1,27 +1,28 @@
 <template>
   <section class="c-members">
     <div class="c-container">
-      <div class="c-members__head">
-        <h2 class="c-members__headTitle">
-          <span class="c-members__headColor">M</span>ember
+      <div class="c-head">
+        <h2 class="c-head__title">
+          <span class="c-head__color">M</span>
+          ember
         </h2>
       </div>
-      <div class="c-members__box">
+      <div class="c-box">
         <div
           v-for="member in getSomeMember"
           :key="member.id"
-          class="c-members__item"
+          class="c-box__item"
         >
-          <nuxt-link :to="`/member/${member.id}`" class="c-members__link">
-            <img :src="member.img" class="c-members__itemImg" alt="社員写真" />
-            <div class="c-members__info">
-              <p class="c-members__job">
+          <nuxt-link :to="`/member/${member.id}`" class="c-box__link">
+            <img :src="member.img" class="c-box__img" alt="社員写真" />
+            <div class="c-box__info">
+              <p class="c-box__job">
                 {{ member.position }}
               </p>
-              <p class="c-members__name--jp">
+              <p class="c-box__name--jp">
                 {{ member.name_jp }}
               </p>
-              <p class="c-members__name--en">
+              <p class="c-box__name--en">
                 {{ member.name_en }}
               </p>
             </div>
@@ -57,18 +58,18 @@ export default {
   @include mobile {
     padding-bottom: 11rem;
   }
+}
 
-  &__head {
-    position: relative;
-    top: -6.5rem;
-    text-align: center;
+.c-head {
+  position: relative;
+  top: -6.5rem;
+  text-align: center;
 
-    @include mobile {
-      top: -2rem;
-    }
+  @include mobile {
+    top: -2rem;
   }
 
-  &__headTitle {
+  &__title {
     font-family: Yu Mincho Medium, YuMincho, serif;
     font-size: 6rem;
     color: #393739;
@@ -79,7 +80,7 @@ export default {
     }
   }
 
-  &__headColor {
+  &__color {
     @include text-accent;
 
     font-size: 8.2rem;
@@ -88,11 +89,11 @@ export default {
       font-size: 2.5rem;
     }
   }
+}
 
-  &__box {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.c-box {
+  display: flex;
+  flex-wrap: wrap;
 
   &__item {
     width: 25%;
@@ -104,7 +105,7 @@ export default {
     }
   }
 
-  &__itemImg {
+  &__img {
     width: 20.3rem;
     height: 20.5rem;
     border-radius: 50%;

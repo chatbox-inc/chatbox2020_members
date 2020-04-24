@@ -1,20 +1,20 @@
 <template>
   <section class="c-intro">
     <div class="c-container">
-      <div class="c-intro__head">
-        <h2 class="c-intro__headTitle">
-          <span class="c-intro__headColor">働</span>く、学ぶ、成長する
+      <div class="c-head">
+        <h2 class="c-head__title">
+          <span class="c-head__color">働</span>く、学ぶ、成長する
         </h2>
       </div>
-      <div class="c-intro__box">
-        <div class="c-intro__boxItem">
+      <div class="c-box">
+        <div class="c-box__item">
           <img
             src="@/assets/image/intro/img_01@2x.png"
             alt="ミーティング風景"
-            class="c-intro__boxImg"
+            class="c-box__img"
           />
-          <div class="c-intro__boxDescription">
-            <p class="c-intro__boxText">
+          <div class="c-box__description">
+            <p class="c-box__text">
               chatbox は職場環境を「スキルアップのプラットフォーム」と捉え、
               「働きながら学ぶ」の考え方を大切にしています。
               日々の仕事をこなすだけでなく、常に自分の数年後を見据えた仕事設計を。
@@ -22,27 +22,27 @@
               それぞれのスタッフのキャリアプランに合わせて組織を変化させていくのが、chatbox
               の考え方です。
             </p>
-            <p class="c-intro__boxText">
+            <p class="c-box__text">
               継続的な成長を続けるためには、精神的余裕の確保が必要不可欠です。
               リモートワークや自由な休暇制度、リクエストに応じて開講される技術セミナー等、
               それぞれが高いモチベーションを維持するための工夫を継続的に実施しています。
             </p>
-            <p class="c-intro__boxText">
+            <p class="c-box__text">
               日々の「働く」を、楽しく余裕あるものに。自分の未来設計に合わせた意欲ある成長を。
               chatbox は個の成長を軸に、常に新しい形へと変化していきます。
             </p>
           </div>
         </div>
-        <div class="c-intro__boxItem2">
-          <ul class="c-intro__list">
-            <li class="c-intro__listItem">
-              <p class="c-intro__listText">
+        <div class="c-box__item2">
+          <ul class="c-list">
+            <li class="c-list__item">
+              <p class="c-list__text">
                 学びながら働ける環境
               </p>
-              <p class="c-intro__listText">
+              <p class="c-list__text">
                 個性を重視した環境
               </p>
-              <p class="c-intro__listText">
+              <p class="c-list__text">
                 多様なコミニケーション
               </p>
             </li>
@@ -50,7 +50,7 @@
           <img
             src="@/assets/image/intro/img_02@2x.png"
             alt="社内イメージ画像"
-            class="c-intro__boxImg2"
+            class="c-box__img2"
           />
         </div>
       </div>
@@ -71,12 +71,12 @@ export default {}
     padding-top: 4.5rem;
     padding-bottom: 4rem;
   }
+}
 
-  &__head {
-    text-align: center;
-  }
+.c-head {
+  text-align: center;
 
-  &__headTitle {
+  &__title {
     font-family: Yu Mincho Medium, YuMincho, serif;
     font-size: 5rem;
     color: #393739;
@@ -87,33 +87,19 @@ export default {}
     }
   }
 
-  &__headColor {
+  &__color {
     @include text-accent;
   }
+}
 
-  &__img {
-    width: 70%;
+.c-box {
+  margin-top: 5rem;
+
+  @include mobile {
+    margin-top: 2rem;
   }
 
-  &__boxDescription {
-    position: relative;
-    left: -3.2rem;
-
-    @include mobile {
-      left: auto;
-      margin-top: 2rem;
-    }
-  }
-
-  &__box {
-    margin-top: 5rem;
-
-    @include mobile {
-      margin-top: 2rem;
-    }
-  }
-
-  &__boxItem {
+  &__item {
     display: flex;
     align-items: center;
 
@@ -122,7 +108,7 @@ export default {}
     }
   }
 
-  &__boxItem2 {
+  &__item2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +120,7 @@ export default {}
     }
   }
 
-  &__boxImg2 {
+  &__img2 {
     position: relative;
     top: -1rem;
 
@@ -145,7 +131,21 @@ export default {}
     }
   }
 
-  &__boxText {
+  &__img {
+    width: 70%;
+  }
+
+  &__description {
+    position: relative;
+    left: -3.2rem;
+
+    @include mobile {
+      left: auto;
+      margin-top: 2rem;
+    }
+  }
+
+  &__text {
     font-size: 1.5rem;
     line-height: 3rem;
 
@@ -161,17 +161,17 @@ export default {}
       font-size: 1.4rem;
     }
   }
+}
 
-  &__list {
-    margin-right: 10%;
+.c-list {
+  margin-right: 10%;
 
-    @include mobile {
-      margin-top: 2rem;
-      margin-right: 0;
-    }
+  @include mobile {
+    margin-top: 2rem;
+    margin-right: 0;
   }
 
-  &__listItem {
+  &__item {
     writing-mode: vertical-lr;
 
     @include mobile {
@@ -179,7 +179,7 @@ export default {}
     }
   }
 
-  &__listText {
+  &__text {
     @include text-accent;
 
     margin-left: 2rem;

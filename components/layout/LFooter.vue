@@ -2,35 +2,35 @@
   <footer class="l-footer">
     <div class="l-contact">
       <div class="l-contact__bg">
-        <div class="l-contact__head">
+        <div class="l-head">
           <img
-            class="l-contact__icon"
+            class="l-head__icon"
             src="@/assets/image/footer/icon_mail.svg"
             alt="手紙のアイコン"
           />
-          <h2 class="l-contact__title">
+          <h2 class="l-head__title">
             お問い合わせはこちら
           </h2>
         </div>
         <div class="c-container">
-          <div class="l-contact__box">
-            <p class="l-contact__text">
+          <div class="l-box">
+            <p class="l-box__text">
               Webにまつわるお悩み、<br />
               ご相談はお気軽にchatboxまで。
             </p>
-            <div class="l-contact__buttons">
+            <div class="l-buttons">
               <nuxt-link to="/" class="c-footerButton">
                 お問い合わせフォームへ
                 <img
-                  class="l-contact__buttonIcon"
+                  class="l-button__icon"
                   src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
                   alt="右シェブロン"
                 />
               </nuxt-link>
-              <div class="l-contact__callInfo">
-                <p class="l-contact__callText">
+              <div class="l-call">
+                <p class="l-call__text">
                   電話でのお問い合わせ<br />
-                  <span class="l-contact__callNumber">050-3555-1212</span>
+                  <span class="l-call__number">050-3555-1212</span>
                 </p>
               </div>
             </div>
@@ -123,91 +123,13 @@ export default {}
     }
   }
 
-  &__head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2.2rem 0;
-    text-align: center;
-    background-color: #fff;
-
-    @include mobile {
-      padding: 1.7rem 0;
-    }
-  }
-
-  &__text {
-    @include text-white;
-
-    font-size: 3rem;
-    font-weight: bold;
-
-    @include mobile {
-      font-size: 1.7rem;
-    }
-  }
-
-  &__icon {
-    margin-right: 1rem;
-  }
-
-  &__box {
-    text-align: center;
-    background-color: #c3504f;
-  }
-
-  &__buttonIcon {
-    position: relative;
-    top: 1.2rem;
-
-    @include mobile {
-      top: 0.8rem;
-      width: 2.8rem;
-    }
-  }
-
-  &__callInfo {
-    margin-left: 9rem;
-    text-align: left;
-
-    @include mobile {
-      margin-top: 5rem;
-      margin-left: 0;
-    }
-  }
-
   &__logos {
     margin-top: 5.5rem;
-  }
-
-  &__callText {
-    @include text-white;
-
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 0.375rem;
-    appearance: none;
-
-    @include mobile {
-      font-size: 1.6rem;
-      text-align: center;
-    }
   }
 }
 
 .l-footer {
   background-color: #fffcfc;
-
-  &__buttons {
-    display: flex;
-    align-items: center;
-    margin-top: 6.6rem;
-
-    @include mobile {
-      flex-direction: column;
-      margin-top: 6rem;
-    }
-  }
 
   &__callNumber {
     margin-top: 2rem;
@@ -357,6 +279,96 @@ export default {}
     border-style: solid;
     border-width: 4rem 3.5rem 0 3.5rem;
     transform: translate(-50%);
+  }
+}
+
+.l-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.2rem 0;
+  text-align: center;
+  background-color: #fff;
+
+  @include mobile {
+    padding: 1.7rem 0;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+
+.l-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 6.6rem;
+
+  @include mobile {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+}
+
+.l-button {
+  &__icon {
+    position: relative;
+    top: 1.2rem;
+
+    @include mobile {
+      top: 0.8rem;
+      width: 2.8rem;
+    }
+  }
+}
+
+.l-box {
+  text-align: center;
+  background-color: #c3504f;
+
+  &__text {
+    @include text-white;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.l-call {
+  margin-left: 9rem;
+  text-align: left;
+
+  @include mobile {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  &__info {
+    margin-left: 9rem;
+    text-align: left;
+
+    @include mobile {
+      margin-top: 5rem;
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    @include text-white;
+
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.375rem;
+    appearance: none;
+
+    @include mobile {
+      font-size: 1.6rem;
+      text-align: center;
+    }
   }
 }
 </style>
