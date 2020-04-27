@@ -1,9 +1,9 @@
 <template>
-  <section class="p-member">
+  <section v-if="getMember" class="p-member">
     <c-hero />
-    <c-profile :profile="profile" />
-    <c-timeline />
-    <c-interview />
+    <c-profile :profile="getMember.profile" />
+    <c-timeline :timeline="getMember.timeline" />
+    <c-interview :interview="getMember.interview" />
     <c-other :member-list="memberList" />
   </section>
 </template>
@@ -14,6 +14,7 @@ import cProfile from "@/pages/member/-cProfile"
 import cTimeline from "@/pages/member/-cTimeline"
 import cInterview from "@/pages/member/-cInterview"
 import cOther from "@/pages/member/-cOther"
+import { member } from "@/static/api/member.json"
 export default {
   components: {
     cHero,
@@ -24,55 +25,16 @@ export default {
   },
   data() {
     return {
-      profile: {
-        id: 1,
-        name_jp: "為本 雄亮",
-        name_en: "Tamemoto Yusuke",
-        job: "フロントエンドエンジニア",
-        body:
-          "自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。ああああああああああ",
-        img: "/image/profile/img_profile_detail01@2x.png",
-      },
-
-      memberList: [
-        {
-          id: 1,
-          name_jp: "為本 雄亮",
-          name_en: "Tamemoto Yusuke",
-          job: "エンジニア",
-          body:
-            "自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。ああああああああああ",
-          img: "/image/other/img_otherMember01@2x.png",
-        },
-        {
-          id: 2,
-          name_jp: "為本 雄亮",
-          name_en: "Tamemoto Yusuke",
-          job: "エンジニア",
-          body:
-            "自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。ああああああああああ",
-          img: "/image/other/img_otherMember01@2x.png",
-        },
-        {
-          id: 3,
-          name_jp: "為本 雄亮",
-          name_en: "Tamemoto Yusuke",
-          job: "エンジニア",
-          body:
-            "自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。ああああああああああ",
-          img: "/image/other/img_otherMember01@2x.png",
-        },
-        {
-          id: 4,
-          name_jp: "為本 雄亮",
-          name_en: "Tamemoto Yusuke",
-          job: "エンジニア",
-          body:
-            "自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。自己紹介文が入ります。以下、仮テキストです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス。ああああああああああ",
-          img: "/image/other/img_otherMember01@2x.png",
-        },
-      ],
+      memberList: member,
     }
+  },
+  computed: {
+    getMember() {
+      return this.memberList.find(({ id }) => String(id) === this.getParam)
+    },
+    getParam() {
+      return this.$route.params.id
+    },
   },
 }
 </script>

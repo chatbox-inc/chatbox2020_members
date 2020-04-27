@@ -1,5 +1,5 @@
 <template>
-  <section class="c-interview">
+  <section v-if="interview" class="c-interview">
     <div class="c-container">
       <div class="c-interview__head">
         <h2 class="c-interview__title">
@@ -8,48 +8,20 @@
       </div>
       <div class="c-interview__questions">
         <ul class="c-interview__list">
-          <li class="c-interview__listItem">
+          <li
+            v-for="data in interview"
+            :key="data.id"
+            class="c-interview__listItem"
+          >
             <div class="c-interview__numberBox">
-              <p class="c-interview__number">
-                01
-              </p>
+              <p class="c-interview__number" v-html="`0${data.id}`"></p>
             </div>
             <div class="c-interview__question">
               <p class="c-interview__q">
-                --(仮)質問項目が入ります。
+                {{ data.question }}
               </p>
               <p class="c-interview__a">
-                回答が入ります。
-              </p>
-            </div>
-          </li>
-          <li class="c-interview__listItem">
-            <div class="c-interview__numberBox">
-              <p class="c-interview__number">
-                02
-              </p>
-            </div>
-            <div class="c-interview__question">
-              <p class="c-interview__q">
-                --学校生活で楽しかったことは？
-              </p>
-              <p class="c-interview__a">
-                回答が入ります。回答が入ります。回答が入ります。回答が入ります。
-              </p>
-            </div>
-          </li>
-          <li class="c-interview__listItem">
-            <div class="c-interview__numberBox">
-              <p class="c-interview__number">
-                03
-              </p>
-            </div>
-            <div class="c-interview__question">
-              <p class="c-interview__q">
-                --学校生活で何を学んでいますか？
-              </p>
-              <p class="c-interview__a">
-                回答が入ります。回答が入ります。回答が入ります。回答が入ります。
+                {{ data.answer }}
               </p>
             </div>
           </li>
@@ -60,17 +32,24 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    interview: {
+      type: Array,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
 .c-interview {
-  padding-top: 90px;
-  padding-bottom: 167px;
+  padding-top: 9rem;
+  padding-bottom: 16.7rem;
 
   @include mobile {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
   }
 
   &__head {
@@ -79,51 +58,51 @@ export default {}
     text-align: center;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
   &__listItem {
     display: flex;
-    margin-top: 68px;
+    margin-top: 6.8rem;
 
     @include mobile {
-      margin-top: 40px;
+      margin-top: 4rem;
     }
   }
 
   &__numberBox {
     @include text-white;
 
-    width: 54px;
-    max-height: 54px;
-    padding: 15px 0;
-    margin-right: 45px;
+    width: 5.4rem;
+    max-height: 5.4rem;
+    padding: 1.5rem 0;
+    margin-right: 4.5rem;
     text-align: center;
     background-color: $clr-primary;
 
     @include mobile {
-      min-width: 50px;
-      min-height: 50px;
-      margin-right: 9px;
+      min-width: 5rem;
+      min-height: 5rem;
+      margin-right: 0.9rem;
     }
   }
 
   &__q {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 
   &__a {
-    margin-top: 16px;
+    margin-top: 1.6rem;
 
     @include mobile {
-      margin-top: 10px;
-      font-size: 14px;
+      margin-top: 1rem;
+      font-size: 1.4rem;
     }
   }
 }

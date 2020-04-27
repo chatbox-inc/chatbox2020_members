@@ -20,20 +20,20 @@ export default {}
 <style lang="scss" scoped>
 .l-header {
   &__container {
-    max-height: 140px;
-    padding: 37px 0;
+    max-height: 14rem;
+    padding: 3.7rem 0;
     text-align: center;
 
     @include mobile {
-      max-height: 60px;
-      padding: 10px 0;
+      max-height: 6rem;
+      padding: 1rem 0;
     }
   }
 
   &__link {
     display: inline-block;
-    width: 110px;
-    height: 110px;
+    width: 11rem;
+    height: 11rem;
   }
 
   &__triangle {
@@ -42,47 +42,47 @@ export default {}
     left: 0;
     z-index: 99;
     display: inline-block;
-    width: 110px;
-    height: 110px;
-    border: 55px solid transparent;
-    border-top: 55px solid #c2504f;
-    border-left: 55px solid #c2504f;
+    width: 11rem;
+    height: 11rem;
+    border: 5.5rem solid transparent;
+    border-top: 5.5rem solid #c2504f;
+    border-left: 5.5rem solid #c2504f;
 
     @include mobile {
-      width: 60px;
-      height: 60px;
-      border: 30px solid transparent;
-      border-top: 30px solid #c2504f;
-      border-left: 30px solid #c2504f;
+      width: 6rem;
+      height: 6rem;
+      border: 3rem solid transparent;
+      border-top: 3rem solid #c2504f;
+      border-left: 3rem solid #c2504f;
     }
 
     &::after {
       position: absolute;
-      top: -40px;
-      left: -40px;
+      top: -4rem;
+      left: -4rem;
       display: inline-block;
-      width: 28px;
-      height: 28px;
+      width: 2.8rem;
+      height: 2.8rem;
       content: "";
       background-image: url("~assets/image/header/icon_chatbox-white@2x.png");
       background-repeat: no-repeat;
       background-size: contain;
 
       @include mobile {
-        top: -20px;
-        left: -20px;
-        width: 15px;
-        height: 15px;
+        top: -2rem;
+        left: -2rem;
+        width: 1.5rem;
+        height: 1.5rem;
       }
     }
   }
 
   &__logoImg {
-    width: 90px;
-    height: 60px;
+    width: 9rem;
+    height: 6rem;
 
     @include mobile {
-      width: 64px;
+      width: 6.4rem;
       height: auto;
     }
   }

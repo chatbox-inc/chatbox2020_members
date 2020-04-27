@@ -33,48 +33,48 @@ export default {}
 
   &::after {
     position: absolute;
-    bottom: -80px;
+    bottom: -8rem;
     left: 50%;
-    width: 3px;
-    height: 160px;
+    width: 0.3rem;
+    height: 16rem;
     content: "";
     background-color: #c3504f;
     transform: translate(-50%);
 
     @include mobile {
-      bottom: -25px;
-      height: 50px;
+      bottom: -2.5rem;
+      height: 5rem;
     }
   }
 
   &__head {
     position: absolute;
-    bottom: 70px;
+    bottom: 7rem;
 
     @include mobile {
-      top: 92px;
+      top: 9.2rem;
     }
   }
 
   &__title {
     @include text-white;
 
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 30px;
+      font-size: 3rem;
     }
   }
 
   &__text {
     @include text-white;
 
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top: 4rem;
+    font-size: 1.8rem;
 
     @include mobile {
-      margin-top: 3px;
+      margin-top: 0.3rem;
     }
   }
 }

@@ -17,7 +17,7 @@
                 {{ user.name_jp }}
               </p>
               <p class="c-other__job">
-                {{ user.job }}
+                {{ user.position }}
               </p>
             </nuxt-link>
           </div>
@@ -40,21 +40,21 @@ export default {
 
 <style lang="scss" scoped>
 .c-other {
-  padding-top: 86px;
-  padding-bottom: 117px;
+  padding-top: 8.6rem;
+  padding-bottom: 11.7rem;
   text-align: center;
   background-color: #f7dfdf;
 
   @include mobile {
-    padding-top: 40px;
-    padding-bottom: 165px;
+    padding-top: 4rem;
+    padding-bottom: 16.5rem;
   }
 
   &__title {
-    font-size: 25px;
+    font-size: 2.5rem;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
@@ -62,34 +62,28 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 4.5rem;
   }
 
   &__img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+
     @include mobile {
-      width: 120px;
+      width: 12rem;
     }
   }
 
   &__item {
-    width: 130px;
-    margin-right: 90px;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    width: 25%;
 
     @include mobile {
       width: 50%;
-      max-width: 120px;
-      margin-right: 20px;
-
-      &:nth-child(even) {
-        margin-right: 0;
-      }
 
       &:nth-child(n + 3) {
-        margin-top: 40px;
+        margin-top: 4rem;
       }
     }
   }
@@ -97,24 +91,24 @@ export default {
   &__name {
     @include text-primary;
 
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 2rem;
     font-weight: bold;
 
     @include mobile {
-      margin-top: 6px;
-      font-size: 16px;
+      margin-top: 0.6rem;
+      font-size: 1.6rem;
     }
   }
 
   &__job {
     @include text-primary;
 
-    margin-top: 4px;
-    font-size: 14px;
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
 
     @include mobile {
-      font-size: 12px;
+      font-size: 1.2rem;
     }
   }
 }

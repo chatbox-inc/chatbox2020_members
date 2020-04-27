@@ -72,7 +72,7 @@
 }
 
 .c-footerButton {
-  @include btnStructure-inline(540px);
+  @include btnStructure-inline(520px);
   @include btnColor-white;
 
   font-size: 25px;

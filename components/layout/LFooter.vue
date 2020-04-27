@@ -2,35 +2,35 @@
   <footer class="l-footer">
     <div class="l-contact">
       <div class="l-contact__bg">
-        <div class="l-contact__head">
+        <div class="l-head">
           <img
-            class="l-contact__icon"
+            class="l-head__icon"
             src="@/assets/image/footer/icon_mail.svg"
             alt="手紙のアイコン"
           />
-          <h2 class="l-contact__title">
+          <h2 class="l-head__title">
             お問い合わせはこちら
           </h2>
         </div>
         <div class="c-container">
-          <div class="l-contact__box">
-            <p class="l-contact__text">
+          <div class="l-box">
+            <p class="l-box__text">
               Webにまつわるお悩み、<br />
               ご相談はお気軽にchatboxまで。
             </p>
-            <div class="l-contact__buttons">
+            <div class="l-buttons">
               <nuxt-link to="/" class="c-footerButton">
                 お問い合わせフォームへ
                 <img
-                  class="l-contact__buttonIcon"
+                  class="l-button__icon"
                   src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
                   alt="右シェブロン"
                 />
               </nuxt-link>
-              <div class="l-contact__callInfo">
-                <p class="l-contact__callText">
+              <div class="l-call">
+                <p class="l-call__text">
                   電話でのお問い合わせ<br />
-                  <span class="l-contact__callNumber">050-3555-1212</span>
+                  <span class="l-call__number">050-3555-1212</span>
                 </p>
               </div>
             </div>
@@ -46,24 +46,24 @@
       </div>
     </div>
 
-    <div class="l-footer__container">
-      <ul class="l-footer__list">
-        <li class="l-footer__listItem">
+    <div class="l-navi__container">
+      <ul class="l-navi__list">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             chatboxについて
           </nuxt-link>
         </li>
-        <li class="l-footer__listItem">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             サービス
           </nuxt-link>
         </li>
-        <li class="l-footer__listItem">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             メンバー
           </nuxt-link>
         </li>
-        <li class="l-footer__listItem">
+        <li class="l-navi__listItem">
           <nuxt-link to="/" class="l-footer__listLink">
             お問い合わせ
           </nuxt-link>
@@ -115,116 +115,29 @@ export default {}
   &__buttons {
     display: flex;
     align-items: center;
-    margin-top: 66px;
+    margin-top: 6.6rem;
 
     @include mobile {
       flex-direction: column;
-      margin-top: 60px;
-    }
-  }
-
-  &__head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 22px 0;
-    text-align: center;
-    background-color: #fff;
-
-    @include mobile {
-      padding: 17px 0;
-    }
-  }
-
-  &__text {
-    @include text-white;
-
-    font-size: 30px;
-    font-weight: bold;
-
-    @include mobile {
-      font-size: 17px;
-    }
-  }
-
-  &__icon {
-    margin-right: 10px;
-  }
-
-  &__box {
-    text-align: center;
-    background-color: #c3504f;
-  }
-
-  &__buttonIcon {
-    position: relative;
-    top: 12px;
-
-    @include mobile {
-      top: 8px;
-      width: 28px;
-    }
-  }
-
-  &__callInfo {
-    margin-left: 90px;
-    text-align: left;
-
-    @include mobile {
-      margin-top: 50px;
-      margin-left: 0;
+      margin-top: 6rem;
     }
   }
 
   &__logos {
-    margin-top: 55px;
-  }
-
-  &__callText {
-    @include text-white;
-
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 3.75px;
-
-    @include mobile {
-      font-size: 16px;
-      text-align: center;
-    }
+    margin-top: 5.5rem;
   }
 }
 
 .l-footer {
   background-color: #fffcfc;
 
-  &__buttons {
-    display: flex;
-    align-items: center;
-    margin-top: 66px;
-
-    @include mobile {
-      flex-direction: column;
-      margin-top: 60px;
-    }
-  }
-
   &__callNumber {
-    margin-top: 20px;
-    font-size: 32px;
+    margin-top: 2rem;
+    font-size: 3.2rem;
     font-weight: bold;
 
     @include mobile {
-      font-size: 25px;
-    }
-  }
-
-  &__container {
-    max-width: 1590px;
-    padding: 47px 22px 111px 22px;
-    margin: 0 auto;
-
-    @include mobile {
-      padding-bottom: 15px;
+      font-size: 2.5rem;
     }
   }
 
@@ -237,11 +150,11 @@ export default {}
   }
 
   &__listItem {
-    margin-right: 42px;
+    margin-right: 4.2rem;
 
     @include mobile {
-      margin-right: 10px;
-      font-size: 10px;
+      margin-right: 1rem;
+      font-size: 1rem;
     }
   }
 
@@ -250,26 +163,26 @@ export default {}
   }
 
   &__divider {
-    margin: 26px 0 0 0;
+    margin: 2.6rem 0 0 0;
     border-color: #c3504f80;
   }
 
   &__divider--white {
-    margin-top: 127px;
+    margin-top: 12.7rem;
     border-color: white;
 
     @include mobile {
-      margin-top: 50px;
+      margin-top: 5rem;
     }
   }
 
   &__infos {
     display: flex;
     justify-content: space-between;
-    margin-top: 18px;
+    margin-top: 1.8rem;
 
     @include mobile {
-      margin-top: 43px;
+      margin-top: 4.3rem;
     }
   }
 
@@ -278,15 +191,15 @@ export default {}
     align-items: center;
 
     &:nth-child(1) {
-      margin-right: 15px;
+      margin-right: 1.5rem;
     }
   }
 
   &__infoLogo {
-    margin-right: 20px;
+    margin-right: 2rem;
 
     @include mobile {
-      margin-right: 10px;
+      margin-right: 1rem;
     }
   }
 
@@ -294,49 +207,172 @@ export default {}
     @include text-accent;
 
     @include mobile {
-      font-size: 10px;
+      font-size: 1rem;
     }
   }
 
   &__logoText {
     @include text-white;
 
-    margin-top: 60px;
+    margin-top: 6rem;
 
     @include mobile {
-      margin-top: 50px;
-      font-size: 12px;
+      margin-top: 5rem;
+      font-size: 1.2rem;
     }
   }
 
   &__snsLink {
     &:nth-child(1) {
-      margin-right: 15px;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.l-navi {
+  &__container {
+    max-width: 159rem;
+    padding: 4.7rem 2.2rem 11.1rem 2.2rem;
+    margin: 0 auto;
+
+    @include mobile {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__listItem {
+    margin-right: 4.2rem;
+
+    @include mobile {
+      margin-right: 1rem;
+      font-size: 1rem;
     }
   }
 }
 
 .c-container {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 70px;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
 
   @include mobile {
-    padding-top: 79px;
-    padding-bottom: 99px;
+    padding-top: 7.9rem;
+    padding-bottom: 9.9rem;
   }
 
   &::after {
     position: absolute;
-    top: -1px;
+    top: -0.1rem;
     left: 50%;
     width: 0;
     height: 0;
     content: "";
     border-color: #fff transparent transparent transparent;
     border-style: solid;
-    border-width: 40px 35px 0 35px;
+    border-width: 4rem 3.5rem 0 3.5rem;
     transform: translate(-50%);
+  }
+}
+
+.l-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.2rem 0;
+  text-align: center;
+  background-color: #fff;
+
+  @include mobile {
+    padding: 1.7rem 0;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+
+.l-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.6rem;
+
+  @include mobile {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+}
+
+.l-button {
+  &__icon {
+    position: relative;
+    top: 1.2rem;
+
+    @include mobile {
+      top: 0.8rem;
+      width: 2.8rem;
+    }
+  }
+}
+
+.l-box {
+  text-align: center;
+  background-color: #c3504f;
+
+  &__text {
+    @include text-white;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.l-call {
+  margin-left: 9rem;
+  text-align: left;
+
+  @include mobile {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  &__info {
+    margin-left: 2rem;
+    text-align: left;
+
+    @include mobile {
+      margin-top: 4rem;
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    @include text-white;
+
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.375rem;
+    appearance: none;
+
+    @include mobile {
+      margin-top: 0;
+      font-size: 1.6rem;
+      text-align: center;
+    }
   }
 }
 </style>
