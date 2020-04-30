@@ -113,12 +113,24 @@ export default {
   }
 
   &__start {
+    position: relative;
     z-index: 1;
-    display: inline-block;
-    width: 3.8rem;
-    height: 3.8rem;
-    background-color: #f7dfdf;
-    border-radius: 8.3rem;
+    width: 14.2rem;
+    height: 14.2rem;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      width: 3.8rem;
+      height: 3.8rem;
+      content: "";
+      background-color: #f7dfdf;
+      border-radius: 8.3rem;
+      transform: translateY(-50%);
+      transform: translateX(-50%);
+    }
 
     @include mobile {
       display: none;
