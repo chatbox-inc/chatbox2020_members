@@ -63,7 +63,7 @@ export default {
   background-color: #faf7f7;
 
   @include mobile {
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 10.3rem;
   }
 
@@ -113,12 +113,24 @@ export default {
   }
 
   &__start {
+    position: relative;
     z-index: 1;
-    display: inline-block;
-    width: 3.8rem;
-    height: 3.8rem;
-    background-color: #f7dfdf;
-    border-radius: 8.3rem;
+    width: 14.2rem;
+    height: 14.2rem;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      width: 3.8rem;
+      height: 3.8rem;
+      content: "";
+      background-color: #f7dfdf;
+      border-radius: 8.3rem;
+      transform: translateY(-50%);
+      transform: translateX(-50%);
+    }
 
     @include mobile {
       display: none;
@@ -131,7 +143,7 @@ export default {
 
     &::before {
       position: absolute;
-      top: -17.5rem;
+      top: -17rem;
       left: 6.5rem;
       z-index: -3;
       display: inline-block;
@@ -139,6 +151,20 @@ export default {
       height: 20rem;
       content: "";
       background-color: #f7dfdf;
+    }
+
+    &::after {
+      position: absolute;
+      top: -1.2rem;
+      left: -1.2rem;
+      display: block;
+      width: 16.6rem;
+      height: 16.6rem;
+      content: "";
+      background: #fff 0% 0% no-repeat padding-box;
+      border: 0.3rem solid #f7dfdf;
+      border-radius: 8.3rem;
+      opacity: 1;
     }
   }
 
@@ -156,6 +182,7 @@ export default {
     z-index: 3;
     width: 56.4rem;
     padding: 1.5rem 4rem;
+    margin-top: 0.6rem;
     background-color: #fff;
     border: 0.4rem solid #f7dfdf;
     border-radius: 0.5rem;
@@ -188,6 +215,12 @@ export default {
     margin-right: 1rem;
     font-weight: bold;
 
+    @include mobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__work {
     @include mobile {
       font-size: 1.4rem;
     }

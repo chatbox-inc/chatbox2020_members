@@ -16,7 +16,7 @@
           </div>
           <div class="c-profile__info">
             <p class="c-profile__job">
-              {{ profile.job }}
+              {{ profile.position }}
             </p>
           </div>
           <div class="c-profile__info">
@@ -49,7 +49,7 @@ export default {
 
   @include mobile {
     padding-top: 4.5rem;
-    padding-bottom: 13.4rem;
+    padding-bottom: 5rem;
   }
 
   &__box {
@@ -98,22 +98,27 @@ export default {
       font-size: 2.5rem;
 
       &::before {
-        width: 0.7rem;
+        width: 1rem;
         height: 2.3rem;
       }
     }
   }
 
   &__name--small {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
     font-size: 1.6rem;
+    letter-spacing: 0;
 
     @include mobile {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 
   &__job {
     margin-top: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
 

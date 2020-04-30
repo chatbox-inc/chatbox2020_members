@@ -63,6 +63,10 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4.5rem;
+
+    @include mobile {
+      margin-top: 3rem;
+    }
   }
 
   &__img {
@@ -73,6 +77,7 @@ export default {
 
     @include mobile {
       width: 12rem;
+      height: 12rem;
     }
   }
 
