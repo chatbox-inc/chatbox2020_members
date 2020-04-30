@@ -131,7 +131,7 @@ export default {
 
     &::before {
       position: absolute;
-      top: -17.5rem;
+      top: -17rem;
       left: 6.5rem;
       z-index: -3;
       display: inline-block;
