@@ -8,11 +8,7 @@
       </div>
       <div class="c-box">
         <div class="c-box__item">
-          <img
-            src="@/assets/image/intro/img_01@2x.png"
-            alt="ミーティング風景"
-            class="c-box__img"
-          />
+          <div class="c-box__img" />
           <div class="c-box__description">
             <p class="c-box__text">
               chatbox は職場環境を「スキルアップのプラットフォーム」と捉え、
@@ -20,14 +16,10 @@
               日々の仕事をこなすだけでなく、常に自分の数年後を見据えた仕事設計を。
               個人が組織に合わせるのではなく、
               それぞれのスタッフのキャリアプランに合わせて組織を変化させていくのが、chatbox
-              の考え方です。
-            </p>
-            <p class="c-box__text">
+              の考え方です。<br />
               継続的な成長を続けるためには、精神的余裕の確保が必要不可欠です。
               リモートワークや自由な休暇制度、リクエストに応じて開講される技術セミナー等、
-              それぞれが高いモチベーションを維持するための工夫を継続的に実施しています。
-            </p>
-            <p class="c-box__text">
+              それぞれが高いモチベーションを維持するための工夫を継続的に実施しています。<br />
               日々の「働く」を、楽しく余裕あるものに。自分の未来設計に合わせた意欲ある成長を。
               chatbox は個の成長を軸に、常に新しい形へと変化していきます。
             </p>
@@ -101,18 +93,18 @@ export default {}
 
   &__item {
     display: flex;
-    align-items: center;
+    align-items: top;
 
     @include mobile {
       display: block;
+      text-align: center;
     }
   }
 
   &__item2 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 6.4rem;
+    justify-content: space-between;
 
     @include mobile {
       flex-direction: column-reverse;
@@ -122,10 +114,12 @@ export default {}
 
   &__img2 {
     position: relative;
-    top: -1rem;
+    top: -2rem;
+    left: -3.2rem;
 
     @include mobile {
-      top: initial;
+      top: 0;
+      left: auto;
       width: 20rem;
       height: 15rem;
     }
@@ -133,13 +127,26 @@ export default {}
 
   &__img {
     width: 70%;
+    min-width: 546px;
+    height: 708px;
+    margin: 0 auto;
+    background-image: url("~assets/image/intro/img_01@2x.png");
+    background-size: cover;
+
+    @include mobile {
+      min-width: 280px;
+      height: 317px;
+      background-image: url("~assets/image/intro/sp_img_01@2x.png");
+    }
   }
 
   &__description {
     position: relative;
+    top: 3rem;
     left: -3.2rem;
 
     @include mobile {
+      top: 0;
       left: auto;
       margin-top: 2rem;
     }
@@ -158,22 +165,23 @@ export default {}
     }
 
     @include mobile {
+      max-width: 280px;
+      margin: 0 auto;
       font-size: 1.4rem;
+      text-align: left;
     }
   }
 }
 
 .c-list {
-  margin-right: 10%;
+  margin-left: 10%;
 
   @include mobile {
     margin-top: 2rem;
-    margin-right: 0;
+    margin-left: 0;
   }
 
   &__item {
-    writing-mode: vertical-lr;
-
     @include mobile {
       writing-mode: initial;
     }
@@ -182,9 +190,14 @@ export default {}
   &__text {
     @include text-accent;
 
+    margin-top: 4rem;
     margin-left: 2rem;
     font-size: 2rem;
     font-weight: bold;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
 
     @include mobile {
       margin-left: 0;

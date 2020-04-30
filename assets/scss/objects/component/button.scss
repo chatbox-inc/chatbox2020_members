@@ -81,7 +81,8 @@
     @include btnStructure-inline(290px);
     @include btnColor-white;
 
-    padding: 5px 0;
+    position: relative;
+    padding: 23px 0;
     font-size: 16px;
   }
 }
