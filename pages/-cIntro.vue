@@ -8,11 +8,7 @@
       </div>
       <div class="c-box">
         <div class="c-box__item">
-          <img
-            src="@/assets/image/intro/img_01@2x.png"
-            alt="ミーティング風景"
-            class="c-box__img"
-          />
+          <div class="c-box__img" />
           <div class="c-box__description">
             <p class="c-box__text">
               chatbox は職場環境を「スキルアップのプラットフォーム」と捉え、
@@ -131,10 +127,16 @@ export default {}
 
   &__img {
     width: 70%;
+    min-width: 546px;
+    height: 708px;
+    margin: 0 auto;
+    background-image: url("~assets/image/intro/img_01@2x.png");
+    background-size: cover;
 
     @include mobile {
-      width: 280px;
+      min-width: 280px;
       height: 317px;
+      background-image: url("~assets/image/intro/sp_img_01@2x.png");
     }
   }
 
@@ -163,7 +165,10 @@ export default {}
     }
 
     @include mobile {
+      max-width: 280px;
+      margin: 0 auto;
       font-size: 1.4rem;
+      text-align: left;
     }
   }
 }
