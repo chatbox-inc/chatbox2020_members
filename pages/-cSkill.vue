@@ -20,7 +20,7 @@
           />
           <div class="c-box__description">
             <h3 class="c-box__title">
-              多様なコミニケーション
+              コミニケーション能力の育成
             </h3>
             <p class="c-box__text">
               制作現場における円滑なコミュニケーションは、良い仕事を生み出すだけでなく、
