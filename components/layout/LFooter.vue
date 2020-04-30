@@ -34,13 +34,6 @@
                 </p>
               </div>
             </div>
-            <hr class="l-contact__divider--white" />
-            <div class="l-contact__logos">
-              <img
-                src="@/assets/image/footer/img_chatbox_logo@2x.png"
-                alt="chatbox.inc webの「これから」を語り合う"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -122,10 +115,6 @@ export default {}
       margin-top: 6rem;
     }
   }
-
-  &__logos {
-    margin-top: 5.5rem;
-  }
 }
 
 .l-footer {
@@ -165,15 +154,6 @@ export default {}
   &__divider {
     margin: 2.6rem 0 0 0;
     border-color: #c3504f80;
-  }
-
-  &__divider--white {
-    margin-top: 12.7rem;
-    border-color: white;
-
-    @include mobile {
-      margin-top: 5rem;
-    }
   }
 
   &__infos {
@@ -316,10 +296,14 @@ export default {}
   &__icon {
     position: relative;
     top: 1.2rem;
+    margin-left: 3rem;
 
     @include mobile {
-      top: 0.8rem;
-      width: 2.8rem;
+      position: absolute;
+      top: 50%;
+      width: 2.5rem;
+      margin-left: 2rem;
+      transform: translateY(-50%);
     }
   }
 }
@@ -335,7 +319,7 @@ export default {}
     font-weight: bold;
 
     @include mobile {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
   }
 }

@@ -116,7 +116,7 @@ export default {
     object-fit: cover;
 
     @include mobile {
-      min-width: 12rem;
+      width: 12rem;
       height: 12rem;
     }
   }
