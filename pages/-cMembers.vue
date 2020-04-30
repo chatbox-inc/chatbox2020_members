@@ -83,9 +83,13 @@ export default {
   &__color {
     @include text-accent;
 
+    position: relative;
+    left: 1.7rem;
+    display: inline-block;
     font-size: 8.2rem;
 
     @include mobile {
+      left: 1rem;
       font-size: 2.5rem;
     }
   }
@@ -106,13 +110,13 @@ export default {
   }
 
   &__img {
-    width: 20.3rem;
+    width: 20.5rem;
     height: 20.5rem;
     border-radius: 50%;
     object-fit: cover;
 
     @include mobile {
-      width: 12rem;
+      min-width: 12rem;
       height: 12rem;
     }
   }
