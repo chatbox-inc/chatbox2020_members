@@ -63,7 +63,7 @@ export default {
   background-color: #faf7f7;
 
   @include mobile {
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 10.3rem;
   }
 
@@ -140,6 +140,20 @@ export default {
       content: "";
       background-color: #f7dfdf;
     }
+
+    &::after {
+      position: absolute;
+      top: -1.2rem;
+      left: -1.2rem;
+      display: block;
+      width: 16.6rem;
+      height: 16.6rem;
+      content: "";
+      background: #fff 0% 0% no-repeat padding-box;
+      border: 0.3rem solid #f7dfdf;
+      border-radius: 8.3rem;
+      opacity: 1;
+    }
   }
 
   &__date {
@@ -156,6 +170,7 @@ export default {
     z-index: 3;
     width: 56.4rem;
     padding: 1.5rem 4rem;
+    margin-top: 0.6rem;
     background-color: #fff;
     border: 0.4rem solid #f7dfdf;
     border-radius: 0.5rem;
@@ -188,6 +203,12 @@ export default {
     margin-right: 1rem;
     font-weight: bold;
 
+    @include mobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__work {
     @include mobile {
       font-size: 1.4rem;
     }
