@@ -149,7 +149,7 @@ export default {}
 
 .c-point {
   position: relative;
-  width: 30%;
+  width: 33%;
   margin-right: 1rem;
   text-align: center;
   background-color: #f5f1f1;
