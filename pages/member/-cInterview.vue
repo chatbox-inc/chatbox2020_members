@@ -71,20 +71,28 @@ export default {
     }
   }
 
+  &__number {
+    line-height: 5.4rem;
+
+    @include mobile {
+      line-height: 4rem;
+    }
+  }
+
   &__numberBox {
     @include text-white;
 
     width: 5.4rem;
-    max-height: 5.4rem;
-    padding: 1.5rem 0;
+    height: 5.4rem;
     margin-right: 4.5rem;
     text-align: center;
     background-color: $clr-primary;
 
     @include mobile {
-      min-width: 5rem;
-      min-height: 5rem;
-      margin-right: 0.9rem;
+      width: 4rem;
+      min-width: 4rem;
+      max-height: 4rem;
+      margin-right: 1.5rem;
     }
   }
 
